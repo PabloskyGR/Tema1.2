@@ -33,12 +33,12 @@ public class Ejercicio5 {
 		// Calculamos la media entera
 		med = (nota1 + nota2 + nota3) / 3;
 		
-		// Calculamos la media condecimales
+		// Calculamos la media con decimales
 		med2 = (float)(nota1 + nota2 + nota3) / 3;
 		
 		// Mostramos las notas medias
-		System.out.println("En el boletón de calificaciones tienes un: " + med);
-		System.out.println("En el expediente académico tienes un: " + med2);
+		System.out.println("En el boletín de calificaciones tienes un: " + med);
+		System.out.println("En el expediente académico tienes un: " + Math.round(med2 * 100d) / 100d);
 		
 		// Cerramos el scanner
 		sc.close();
